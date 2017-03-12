@@ -1,3 +1,21 @@
+# Changes to the original
+
+The base Caffe version for this modification is from March 12th, 2017 and can be found here: [https://github.com/BVLC/caffe/tree/e687a71fac81718d40d4e0e98d29eab34f784b5b](https://github.com/BVLC/caffe/tree/e687a71fac81718d40d4e0e98d29eab34f784b5b). 
+
+### Multiple labels in image data layer
+
+The image data layer in current Caffe supports only one integer label to be defined in the text file for a single image.
+
+    0001.jpg 0
+    0002.jpg 1
+    0003.jpg 2
+
+With the modifications done in this version, you can define multiple floating-point numbers, as in the example below.
+
+    0001.jpg 0.345 1.364 -4.124
+    0002.jpg 6.321 5.246 6.235
+    0003.jpg 4.135 -5.356 1.345
+
 # Caffe
 
 [![Build Status](https://travis-ci.org/BVLC/caffe.svg?branch=master)](https://travis-ci.org/BVLC/caffe)
